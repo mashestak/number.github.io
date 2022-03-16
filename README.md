@@ -1,252 +1,75 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@mashestak 
-shower
-/
-shower
-Public
-Code
-Issues
-40
-Pull requests
-Actions
-Projects
-Security
-Insights
-shower/index.html
-@pepelsbey
-pepelsbey Add viewport-fit
-Latest commit c00e7bb on 6 Jul 2021
- History
- 4 contributors
-@pepelsbey@shvaikalesh@RubenVerborgh@aalexeev239
-210 lines (190 sloc)  7.4 KB
-  
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Shower Presentation Engine</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <link rel="stylesheet" href="node_modules/@shower/ribbon/styles/styles.css">
-    <style>
-        .shower {
-            --slide-ratio: calc(16 / 9);
-        }
-    </style>
-</head>
-<body class="shower list">
+# Shower Presentation Template
+[![Test status](https://github.com/shower/shower/workflows/Test/badge.svg)](https://github.com/shower/shower/actions/workflows/test.yml)
 
-    <header class="caption">
-        <h1>Shower Presentation Engine</h1>
-        <p>Yours Truly, Famous Inc.</p>
-    </header>
+<img src="pictures/logo.png" width="250" alt="Shower logo">
 
-    <section class="slide" id="cover">
-        <h2>Shower Presentation Engine</h2>
-        <p>Brought to you by <a href="https://pepelsbey.net">Vadim Makeev</a></p>
-        <figure>
-            <img class="cover" src="pictures/cover.jpg" alt="Hands on the orange typewriter in a park">
-            <figcaption class="copyright right white">
-                <a href="https://fiftyfootshadows.net">© John Carey</a>
-            </figcaption>
-        </figure>
-        <style>
-            #cover h2 {
-                margin: 30px 0 0;
-                color: white;
-                text-align: center;
-                font-size: 70px;
-            }
+> Shower ['ʃəuə] noun. A person or thing that shows.
 
-            #cover p {
-                margin: 10px 0 0;
-                text-align: center;
-                color: white;
-                font-style: italic;
-                font-size: 20px;
-            }
+1. Built on HTML, CSS and vanilla JavaScript.
+2. Works in all modern browsers.
+3. Themes are separated from engine.
+4. Fully keyboard accessible.
+5. Printable to PDF.
 
-            #cover p a {
-                color: white;
-            }
-        </style>
-    </section>
+[See it in action](https://shwr.me/). Includes [Ribbon](https://github.com/shower/ribbon/) and [Material](https://github.com/shower/material/) themes, and [core](https://github.com/shower/core/) with plugins.
 
-    <section class="slide">
-        <h2>Shower key features</h2>
-        <ol>
-            <li>Built on HTML, CSS and JavaScript</li>
-            <li>Works in all modern browsers</li>
-            <li>Themes are separated from engine</li>
-            <li>Fully keyboard accessible</li>
-            <li>Printable to PDF</li>
-        </ol>
-        <p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
-    </section>
+Follow [@shower_me](https://twitter.com/shower_me) for support and updates, [file an issue](https://github.com/shower/shower/issues/new) if you have any.
 
-    <section class="slide">
-        <h2>Plain text on your slides</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
-    </section>
+## Quick Start
 
-    <section class="slide">
-        <h2>Two columns if you like</h2>
-        <div class="columns two">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-        </div>
-    </section>
+1. Download and unzip [shower.zip](http://shwr.me/shower.zip) template archive.
+2. Open `index.html` in any text editor and start creating your presentation.
 
-    <section class="slide">
-        <h2>All kind of lists</h2>
-        <ol>
-            <li>Simple lists are marked with bullets</li>
-            <li>Ordered lists begin with a number</li>
-            <li>You can even nest lists one inside another
-                <ul>
-                    <li>Or mix their types</li>
-                    <li>But do not go too far</li>
-                    <li>Otherwise audience will be bored</li>
-                </ul>
-            </li>
-            <li>Look, seven rows exactly!</li>
-        </ol>
-    </section>
+## Quick Start via CLI
 
-    <section class="slide">
-        <h2>Serious citations</h2>
-        <figure>
-            <blockquote>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-            </blockquote>
-            <figcaption>Marcus Tullius Cicero</figcaption>
-        </figure>
-    </section>
+You’ll need [Node.js](https://nodejs.org/) installed on your computer.
 
-    <section class="slide">
-        <h2>Code samples</h2>
-        <pre>
-            <code>&lt;!DOCTYPE html&gt;</code>
-            <code class="mark">&lt;html lang="en"&gt;</code>
-            <code><mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span></code>
-            <code>    &lt;title&gt;Shower&lt;/title&gt;</code>
-            <code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
-            <code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
-            <code><mark>&lt;/head&gt;</mark></code>
-        </pre>
-    </section>
+1. Install Shower CLI utility: `npm install -g @shower/cli`.
+2. Create your presentation: `shower create`.
 
-    <section class="slide">
-        <h2>Even tables</h2>
-        <table>
-        <tr>
-            <th scope="col">Locavore</th>
-            <th>Umami</th>
-            <th>Helvetica</th>
-            <th>Vegan</th>
-        </tr>
-        <tr>
-            <th scope="row">Fingerstache</th>
-            <td>Kale</td>
-            <td>Chips</td>
-            <td>Keytar</td>
-        </tr>
-        <tr>
-            <th scope="row">Sriracha</th>
-            <td>Gluten-free</td>
-            <td>Ennui</td>
-            <td>Keffiyeh</td>
-        </tr>
-        <tr>
-            <th scope="row">Thundercats</th>
-            <td>Jean</td>
-            <td>Shorts</td>
-            <td>Biodiesel</td>
-        </tr>
-        <tr>
-            <th scope="row">Terry</th>
-            <td>Richardson</td>
-            <td>Swag</td>
-            <td>Blog</td>
-        </tr>
-        </table>
-        <p>It’s good to have information organized.</p>
-    </section>
+Read more on [shower/cli](https://github.com/shower/cli/) page.
 
-    <section class="slide" id="picture">
-        <h2>Pictures</h2>
-        <figure>
-            <img class="cover" src="pictures/picture.jpg" alt="Orange typewriter on a wooden table close-up">
-            <figcaption class="copyright right white">
-                <a href="https://fiftyfootshadows.net">© John Carey</a>
-            </figcaption>
-        </figure>
-        <style>
-            #picture h2 {
-                color: white;
-            }
-        </style>
-    </section>
+## Quick Start with Hosting
 
-    <section class="slide">
-        <h2 class="shout shrink">You can even shout this way</h2>
-    </section>
+You’ll need [Node.js](https://nodejs.org/) installed on your computer.
 
-    <section class="slide">
-        <h2>Inner navigation</h2>
-        <ol>
-            <li>Lets you reveal list items one by one</li>
-            <li class="next">To keep some key points</li>
-            <li class="next">In secret from audience</li>
-            <li class="next">But it will work only once</li>
-            <li class="next">Nobody wants to see the same joke twice</li>
-        </ol>
-    </section>
+1. Copy this repository to your account via GitHub.
+    1. Open [import page](https://github.com/new/import).
+    2. Use `https://github.com/shower/shower` for the repository URL
+    3. Use your presentation name.
+    4. Clone the resulted repository to your computer.
+2. Install dependencies `npm install` and start a local server `npm start`.
+3. Start editing your slides with live-reload.
 
-    <section class="slide" id="see-more">
-        <h2 class="shout">
-            <img src="pictures/logo.svg" alt="Shower logo">
-            <a href="https://github.com/shower/shower">See more on GitHub</a>
-        </h2>
-        <style>
-            #see-more h2 {
-                font-size: 100px
-            }
+Once you’re done you can build a clean copy of your slides:
 
-            #see-more img {
-                width: 0.72em;
-                height: 0.72em;
-            }
-        </style>
-    </section>
+    npm run bundle
 
-    <footer class="badge">
-        <a href="https://github.com/shower/shower">Fork me on GitHub</a>
-    </footer>
+You’ll find your presentation in `bundled` folder. You can also run `npm run archive` to get the same files in `presentation.zip`.
 
-    <div class="progress"></div>
+Publish your presentation online by running:
 
-    <script src="node_modules/@shower/core/dist/shower.js"></script>
-    <!-- Copyright © 3000 Yours Truly, Famous Inc. -->
+    npm run publish
 
-</body>
-</html>
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Loading complete
+You’ll have your slides published to `https://USER.github.io/REPO/`.
+
+## Deploy to Netlify
+
+By clicking the button below you can fork this repo and deploy it to Netlify.
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/shower/shower)
+
+By doing this you would get a GitHub repo linked with Netlify in a way any change to the repo would trigger a Shower rebuild and deploy to Netlify servers, which allows for an easy way to create and share Shower presentation without the need to install anything locally.
+
+## Browser Support
+
+Latest stable versions of Chrome, Edge, Firefox, and Safari are supported.
+
+## Contributing
+
+You’re always welcome to contribute. Fork project, make changes and send it as pull request. But it’s better to file an [issue](https://github.com/shower/shower/issues) with your idea first. Read [contributing rules](CONTRIBUTING.md) for more details.
+
+Main contributors in historical order: [pepelsbey](https://github.com/pepelsbey), [jahson](https://github.com/jahson), [miripiruni](https://github.com/miripiruni), [kizu](https://github.com/kizu), [artpolikarpov](https://github.com/artpolikarpov), [tonyganch](https://github.com/tonyganch), [zloylos](https://github.com/zloylos), [zloylos](https://github.com/zloylos), [shvaikalesh](https://github.com/shvaikalesh).
+
+---
+Licensed under [MIT License](LICENSE.md).
