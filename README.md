@@ -1,12 +1,21 @@
-# number.github.io
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Учебный файл html</title>
-  </head>
-  <body bgcolor="FFFFFF" background="https://catherineasquithgallery.com/uploads/posts/2021-02/1613716549_51-p-stilnii-fon-dlya-prezentatsii-59.jpg">
-    Расписание занятий на вторник 
-  <section class="slide">
-  <h2>Портфолио студента</h2>
-</section>
-      </body>
-  </html>
+ <head>
+  <meta charset="utf-8">
+  <title>section</title>
+ </head> 
+ <body>
+  <section>
+   <h1>Съёмки фильма Полипропилен</h1>
+   <p>История о том, как снимали фильм, где герои отдыхали на пляже, 
+   потом пришёл антагонист, избил протагонистов, сбросил их в бассейн, 
+   и что из этого получилось.</p>
+  </section>
+  <section>
+   <h1>Хороший язык</h1>
+   <p>История о том, как проходила студия изучения языка эсперанто, 
+   в то время, как над ней, на веранде велась студия приколистов, 
+   где травились анекдоты, и что из этого получилось.</p>
+  </section>
+ </body>
+</html>
