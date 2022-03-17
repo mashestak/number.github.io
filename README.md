@@ -19,11 +19,11 @@
         
          <section class="slide" id="cover">
         <h2>Shower Presentation Engine</h2>
-        <p>Brought to you by <a href="https://pepelsbey.net">Vadim Makeev</a></p>
+        <p>Brought to you by <a>Шестак Мария</a></p>
         <figure>
-            <img class="cover" src="pictures/cover.jpg" alt="Hands on the orange typewriter in a park">
+            <img class="cover" src="https://funart.pro/uploads/posts/2021-04/1617284432_30-p-oboi-shveitsarskie-alpi-alpi-33.jpg">
             <figcaption class="copyright right white">
-                <a href="https://fiftyfootshadows.net">© John Carey</a>
+                <a>Шестак Мария</a>
             </figcaption>
         </figure>
         <style>
