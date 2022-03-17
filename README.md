@@ -17,14 +17,10 @@
            <p>Шестак Мария</p>
         </header>
         
-         <section class="slide" id="cover">
-        <h2>Shower Presentation Engine</h2>
+         <section>
         <p>Brought to you by <a>Шестак Мария</a></p>
         <figure>
             <img class="cover" src="https://funart.pro/uploads/posts/2021-04/1617284432_30-p-oboi-shveitsarskie-alpi-alpi-33.jpg">
-            <figcaption class="copyright right white">
-                <a>Шестак Мария</a>
-            </figcaption>
         </figure>
        
     </section>
