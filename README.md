@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html  lang="en">
     <head>
-        <title>Презентация-резюме</title>
+        <title>Презентация-резюме html</title>
     <link rel="stylesheet">
 </head>
     
